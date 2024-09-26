@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro</title>
+    <link rel="stylesheet" href="assets/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <div class="register">
+            <div class="formulario">
+                <h1>Cadastro</h1>
+    
+                <form method="POST" action="index.html">
+                    <label>
+                        Nome<br>
+                        <input class="inpt" type="text" name="name" placeholder="Digite seu nome completo" required>
+                    </label><br>
+
+                    <label>
+                        Email<br>
+                        <input class="inpt" type="email" name="email" placeholder="exemplo@dominio.com" required>
+                    </label><br>
+
+                    <label>
+                        Senha<br>
+                        <input class="inpt" type="password" name="password" minlength="6" placeholder="Digite sua senha (min. 6 caracteres)" required>
+                    </label><br>
+
+                    <label>
+                        Data de Nascimento<br>
+                        <input class="inpt" type="text" name="date" pattern="^(0[1-9]|[12][0-9]|3[01])/(0[1-9]|1[0-2])/([0-9]{4})$" placeholder="dd/mm/yyyy" maxlength="10" required> 
+                    </label><br>
+
+                    <p >Selecione seu Gênero</p><br>
+                    <div class="genero">
+                        <label><input class="rad" type="radio" name="genero" value="M">Masculino</label>
+                        <label><input class="rad" type="radio" name="genero" value="F">Feminino</label>
+                        <label><input class="rad" type="radio" name="genero" value="O">Outro</label>
+                    </div>
+                    <br>
+
+
+                    <label>
+                        <p class="termos"><input type="checkbox" name="terms" required> Li e aceito os <a href="#">Termos de Uso</a></p>
+                    </label><br>
+
+                    <div class="btn">
+                        <button type="submit">Cadastrar</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
